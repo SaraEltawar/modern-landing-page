@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="أفق: تصميم وتطوير حلول رقمية للشركات." />
+  <title>أفق | حلول رقمية مبتكرة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#101d3a',primary:'#4169e1',muted:'#64748b'},fontFamily:{cairo:['Cairo','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="font-cairo text-navy bg-white antialiased">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-100">
+    <nav class="container-site flex items-center justify-between h-20" aria-label="القائمة الرئيسية">
+      <a href="#home" class="text-3xl font-extrabold tracking-tight">أفـ<span class="text-primary">ق</span>.</a>
+      <div id="navLinks" class="nav-links hidden md:flex items-center gap-8 font-bold text-sm">
+        <a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#experience">خبرتنا</a><a href="#contact">تواصل معنا</a>
+      </div>
+      <a href="#contact" class="hidden sm:inline-flex btn-primary">ابدأ مشروعك <span aria-hidden="true">←</span></a>
+      <button id="menuToggle" class="md:hidden rounded-xl bg-blue-50 px-4 py-2 text-2xl" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="فتح القائمة">☰</button>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero-bg overflow-hidden">
+      <div class="container-site grid lg:grid-cols-2 gap-12 items-center py-20 lg:py-28">
+        <div class="reveal">
+          <span class="text-primary font-extrabold text-sm">✦ شريكك نحو النجاح الرقمي</span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mt-5 mb-6">نحوّل أفكارك إلى <span class="text-primary">تجارب رقمية</span> استثنائية</h1>
+          <p class="text-muted leading-8 max-w-xl">نساعد الشركات على بناء حضور رقمي مميز من خلال التصميم والتطوير والحلول التقنية التي تجمع بين الإبداع والفعالية.</p>
+          <div class="flex flex-wrap gap-3 mt-9"><a href="#services" class="btn-primary">استكشف خدماتنا ←</a><a href="#about" class="btn-secondary">تعرّف علينا</a></div>
+        </div>
+        <div class="relative max-w-lg w-full mx-auto reveal" aria-hidden="true">
+          <div class="hero-panel rounded-[2.5rem] p-8 sm:p-12 rotate-[-3deg] shadow-2xl">
+            <div class="rounded-3xl bg-white p-6 sm:p-9 rotate-[3deg] shadow-xl">
+              <div class="flex gap-2 mb-8"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+              <div class="h-3 w-2/5 bg-blue-100 rounded-full mb-4"></div><div class="h-3 w-4/5 bg-slate-100 rounded-full mb-10"></div>
+              <div class="flex gap-3 items-end h-36 sm:h-44"> <div class="bar h-[48%]"></div><div class="bar h-[72%]"></div><div class="bar h-[57%]"></div><div class="bar h-[95%]"></div><div class="bar h-[80%]"></div></div>
+            </div>
+          </div>
+          <div class="absolute -bottom-5 right-0 bg-white rounded-2xl shadow-xl px-5 py-4 text-sm font-bold">🟢 حلول مبتكرة، نتائج ملموسة</div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section-space">
+      <div class="container-site grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="about-art min-h-[320px] sm:min-h-[420px] rounded-[2rem] flex items-center justify-center relative overflow-hidden reveal" aria-hidden="true"><div class="ring-art"></div><div class="absolute bg-white shadow-xl rounded-2xl px-10 py-6 text-4xl font-extrabold">أفـ<span class="text-primary">ق</span>.</div></div>
+        <div class="reveal"><span class="eyebrow">01 / من نحن</span><h2 class="section-title">شغف بالتفاصيل، ورؤية تتجاوز التوقعات</h2><p class="body-copy">نحن فريق متخصص في الحلول الرقمية. نؤمن أن كل مشروع فرصة لصناعة أثر حقيقي، ولذلك نبدأ بفهم احتياجات عملائنا قبل تصميم الحل المناسب.</p>
+          <ul class="check-list mt-6 space-y-3"><li>حلول مصممة وفق احتياجات مشروعك</li><li>اهتمام بجودة التنفيذ وتجربة المستخدم</li><li>تواصل واضح ومتابعة مستمرة</li></ul>
+          <a href="#contact" class="btn-primary mt-8">لنتحدث عن مشروعك ←</a>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="section-space bg-slate-50">
+      <div class="container-site"><div class="text-center max-w-2xl mx-auto mb-12 reveal"><span class="eyebrow">02 / خدماتنا</span><h2 class="section-title">كل ما تحتاجه لتنمية حضورك الرقمي</h2><p class="body-copy">خدمات متكاملة تجمع بين التصميم والتطوير والاستراتيجية.</p></div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="service-card reveal"><span class="service-icon">✦</span><h3>تصميم واجهات المستخدم</h3><p>واجهات عصرية وسهلة الاستخدام تحقق التوازن بين الجمال والوضوح.</p></article>
+          <article class="service-card reveal"><span class="service-icon">⌘</span><h3>تطوير المواقع</h3><p>مواقع سريعة ومتجاوبة مع مختلف الأجهزة مع الاهتمام بالأداء.</p></article>
+          <article class="service-card reveal"><span class="service-icon">▣</span><h3>المتاجر الإلكترونية</h3><p>تجربة تسوق واضحة تساعد العملاء على اكتشاف المنتجات وإتمام الطلبات.</p></article>
+          <article class="service-card reveal"><span class="service-icon">◈</span><h3>الهوية الرقمية</h3><p>حضور بصري متناسق يعكس شخصية علامتك التجارية.</p></article>
+          <article class="service-card reveal"><span class="service-icon">▤</span><h3>أنظمة إدارة الأعمال</h3><p>حلول لتنظيم العمليات والبيانات وتحسين كفاءة العمل.</p></article>
+          <article class="service-card reveal"><span class="service-icon">↗</span><h3>الدعم والتحسين</h3><p>تحسين الأداء وتجربة الاستخدام ومتابعة احتياجات المشروع.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="section-space">
+      <div class="container-site grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"><div class="reveal"><span class="eyebrow">03 / خبرتنا</span><h2 class="section-title">منهجية واضحة من الفكرة إلى الإطلاق</h2><p class="body-copy">نركز على فهم الأهداف، والتخطيط، والتصميم، والتطوير، ثم اختبار الجودة وتحسين التجربة. نعمل على بناء حلول قابلة للتطوير مع نمو مشروعك.</p><ul class="check-list mt-6 space-y-3"><li>تحليل المتطلبات وتحديد الأولويات</li><li>تنفيذ منظم ومراجعة مستمرة</li><li>حلول قابلة للتطوير مستقبلًا</li></ul></div>
+        <div class="grid grid-cols-2 gap-4 reveal"><div class="stat-card"><strong>01</strong><span>نفهم احتياجك</span></div><div class="stat-card featured"><strong>02</strong><span>نخطط للحل</span></div><div class="stat-card"><strong>03</strong><span>نصمم ونطور</span></div><div class="stat-card"><strong>04</strong><span>نختبر ونحسّن</span></div></div>
+      </div>
+    </section>
+    <section id="contact" class="section-space bg-slate-50">
+      <div class="container-site grid lg:grid-cols-2 gap-12 lg:gap-20 items-start"><div class="reveal"><span class="eyebrow">04 / تواصل معنا</span><h2 class="section-title">لديك فكرة؟ دعنا نحوّلها إلى واقع</h2><p class="body-copy">شاركنا تفاصيل مشروعك وسنساعدك على تحديد الخطوة التالية.</p><div class="mt-8 space-y-5"><p class="font-bold">✉ <span class="mr-2">hello@example.com</span></p><p class="font-bold">◷ <span class="mr-2">الأحد إلى الخميس</span></p></div></div>
+        <form id="contactForm" class="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 sm:p-9 reveal"><div class="grid sm:grid-cols-2 gap-4"><div class="field"><label for="name">الاسم الكامل</label><input id="name" name="name" required placeholder="اسمك" /></div><div class="field"><label for="email">البريد الإلكتروني</label><input id="email" name="email" type="email" required placeholder="name@example.com" /></div></div><div class="field"><label for="subject">موضوع الرسالة</label><input id="subject" name="subject" required placeholder="كيف يمكننا مساعدتك؟" /></div><div class="field"><label for="message">تفاصيل المشروع</label><textarea id="message" name="message" rows="5" required placeholder="أخبرنا المزيد عن فكرتك..."></textarea></div><button type="submit" class="btn-primary w-full sm:w-auto">إرسال عبر البريد ←</button><p id="formMessage" role="status" class="text-xs text-muted mt-4">نموذج تجريبي يفتح تطبيق البريد الإلكتروني؛ لا يرسل إلى خادم.</p></form>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-navy text-white pt-16 pb-7"><div class="container-site"><div class="grid md:grid-cols-3 gap-10"><div><a href="#home" class="text-3xl font-extrabold">أفـ<span class="text-blue-400">ق</span>.</a><p class="text-slate-300 leading-8 text-sm mt-5 max-w-sm">نصنع حلولًا رقمية تجمع بين الإبداع والتقنية ونرافقك في رحلة النمو.</p></div><div><h3 class="font-extrabold mb-5">روابط سريعة</h3><div class="footer-links"><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#experience">خبرتنا</a><a href="#contact">تواصل معنا</a></div></div><div><h3 class="font-extrabold mb-5">خدماتنا</h3><div class="footer-links"><a href="#services">تصميم المواقع</a><a href="#services">تطوير المتاجر</a><a href="#services">الهوية الرقمية</a><a href="#services">أنظمة الأعمال</a></div></div></div><div class="border-t border-white/15 text-center text-slate-400 text-sm mt-12 pt-6">© <span id="year"></span> أفق — نموذج تجريبي قابل للتخصيص.</div></div></footer>
+</body>
+</html>
